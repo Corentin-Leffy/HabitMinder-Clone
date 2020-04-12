@@ -1,27 +1,29 @@
 import 'package:flutter/material.dart';
-import 'package:habit_minder_clone/theme/theme.dart';
+import 'package:flutter/services.dart';
+import 'package:habit_minder_clone/theme/color.dart';
+import 'package:habit_minder_clone/walkthroughs/welcome_screen.dart';
 
 void main() {
-  runApp(MyApp());
+  hideStatusBar();
+  runApp(App());
 }
 
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(primaryColor: red),
-      home: MyHomePage(),
-    );
-  }
+void hideStatusBar() {
+  SystemChrome.setSystemUIOverlayStyle(
+    SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent,
+      statusBarIconBrightness: Brightness.dark,
+    ),
+  );
 }
 
-class MyHomePage extends StatelessWidget {
+class App extends StatelessWidget {
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text('Flutter Demo Home Page')),
-      body: Center(),
-    );
-  }
+  Widget build(BuildContext context) => MaterialApp(
+        theme: ThemeData(
+          primaryColor: AppColors.red,
+          fontFamily: 'Nunito',
+        ),
+        home: WelcomeScreen(),
+      );
 }
