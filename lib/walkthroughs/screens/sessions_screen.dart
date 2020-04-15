@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:habit_minder_clone/navigation/routes.dart';
 import 'package:habit_minder_clone/walkthroughs/screens/walkthroughs_screen.dart';
-import 'package:habit_minder_clone/walkthroughs/widgets/logo.dart';
+import 'package:habit_minder_clone/walkthroughs/widgets/sessions/screens_stack.dart';
 
 class SessionScreen extends WalkthroughsScreen {
   @override
   String get title => 'Sessions';
 
   @override
-  Widget get centeredWidget => LogoWidget();
+  Widget get centeredWidget => ScreensStack();
 
   @override
   String get content => 'HabitMinder will keep you accountable with sessions '

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:habit_minder_clone/walkthroughs/widgets/body.dart';
-import 'package:habit_minder_clone/walkthroughs/widgets/button_at_bottom.dart';
+import 'package:habit_minder_clone/walkthroughs/widgets/common/body.dart';
+import 'package:habit_minder_clone/walkthroughs/widgets/common/button_at_bottom.dart';
 
 abstract class WalkthroughsScreen extends StatelessWidget {
   static const _spaceHorizontal = EdgeInsets.symmetric(horizontal: 16.0);

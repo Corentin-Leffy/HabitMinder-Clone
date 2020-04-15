@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:habit_minder_clone/walkthroughs/widgets/text_content.dart';
-import 'package:habit_minder_clone/walkthroughs/widgets/title.dart';
+import 'package:habit_minder_clone/walkthroughs/widgets/common/text_content.dart';
+import 'package:habit_minder_clone/walkthroughs/widgets/common/title.dart';
 
 class Body extends StatelessWidget {
   static const _space = SizedBox(height: 40);

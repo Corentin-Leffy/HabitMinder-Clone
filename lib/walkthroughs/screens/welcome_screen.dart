@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:habit_minder_clone/navigation/routes.dart';
 import 'package:habit_minder_clone/walkthroughs/screens/walkthroughs_screen.dart';
-import 'package:habit_minder_clone/walkthroughs/widgets/logo.dart';
+import 'package:habit_minder_clone/walkthroughs/widgets/welcome/logo.dart';
 
 class WelcomeScreen extends WalkthroughsScreen {
   @override
