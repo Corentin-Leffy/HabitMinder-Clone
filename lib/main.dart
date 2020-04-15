@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:habit_minder_clone/theme/color.dart';
-import 'package:habit_minder_clone/walkthroughs/welcome_screen.dart';
+import 'package:habit_minder_clone/walkthroughs/screens/welcome_screen.dart';
 
 void main() {
   hideStatusBar();

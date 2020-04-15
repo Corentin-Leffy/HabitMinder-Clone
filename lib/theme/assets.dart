@@ -1,3 +1,3 @@
 class Assets {
-  static const logo = 'assets/habit_minder_icon.png';
+  static const logo = 'assets/icon/habit_minder_icon.png';
 }
