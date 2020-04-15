@@ -9,12 +9,18 @@ class Button extends StatelessWidget {
     vertical: 12.0,
   );
 
+  final Function _onPressed;
+
+  const Button({Key key, @required Function onPressed})
+      : _onPressed = onPressed,
+        super(key: key);
+
   @override
   Widget build(BuildContext context) => FlatButton(
         shape: AppShape.roundedRectangle,
         color: AppColors.black,
         textColor: Colors.white,
-        onPressed: () {},
+        onPressed: _onPressed,
         child: Padding(
           padding: _spaceAround,
           child: Text('Next', style: AppTextStyle.button),

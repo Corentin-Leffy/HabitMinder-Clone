@@ -1,21 +1,33 @@
 import 'package:flutter/material.dart';
 import 'package:habit_minder_clone/walkthroughs/widgets/text_content.dart';
-
-import 'Title.dart';
-import 'centered_widget.dart';
+import 'package:habit_minder_clone/walkthroughs/widgets/title.dart';
 
 class Body extends StatelessWidget {
   static const _space = SizedBox(height: 40);
+
+  final String _title;
+  final Widget _centeredWidget;
+  final String _content;
+
+  const Body({
+    Key key,
+    @required String title,
+    @required Widget centeredWidget,
+    @required String content,
+  })  : _title = title,
+        _centeredWidget = centeredWidget,
+        _content = content,
+        super(key: key);
 
   @override
   Widget build(BuildContext context) => Column(
         children: [
           _space,
-          TitleWidget(),
+          TitleWidget(_title),
           _space,
-          CenteredWidget(),
+          _centeredWidget,
           _space,
-          TextContent(),
+          TextContent(_content),
         ],
       );
 }

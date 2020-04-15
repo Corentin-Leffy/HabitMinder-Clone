@@ -3,16 +3,16 @@ import 'package:habit_minder_clone/navigation/routes.dart';
 import 'package:habit_minder_clone/walkthroughs/screens/walkthroughs_screen.dart';
 import 'package:habit_minder_clone/walkthroughs/widgets/logo.dart';
 
-class WelcomeScreen extends WalkthroughsScreen {
+class SessionScreen extends WalkthroughsScreen {
   @override
-  String get title => 'Welcome\nto HabitMinder !';
+  String get title => 'Sessions';
 
   @override
   Widget get centeredWidget => LogoWidget();
 
   @override
-  String get content => 'An app that helps you stay on track with your healthy '
-      'habits and help you achieve them daily.';
+  String get content => 'HabitMinder will keep you accountable with sessions '
+      'and mini apps while you perform the habits.';
 
   @override
   String get destination => Routes.toSessionsScreen;

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:habit_minder_clone/navigation/routes.dart';
 import 'package:habit_minder_clone/theme/color.dart';
+import 'package:habit_minder_clone/walkthroughs/screens/sessions_screen.dart';
 import 'package:habit_minder_clone/walkthroughs/screens/welcome_screen.dart';
 
 void main() {
@@ -24,6 +26,10 @@ class App extends StatelessWidget {
           primaryColor: AppColors.red,
           fontFamily: 'Nunito',
         ),
-        home: WelcomeScreen(),
+        initialRoute: Routes.toWelcomeScreen,
+        routes: {
+          Routes.toWelcomeScreen: (context) => WelcomeScreen(),
+          Routes.toSessionsScreen: (context) => SessionScreen(),
+        },
       );
 }
